@@ -1,0 +1,14 @@
+<html>
+  <head><title>Multiplication Calculator</title></head>
+  <body>
+    <h1>Multiplication Calculator</h1>
+    <form action="/" method="post">
+      <input type="number" name="num1" placeholder="Number 1" required>
+      <input type="number" name="num2" placeholder="Number 2" required>
+      <button type="submit">Multiply</button>
+    </form>
+    <% if defined?(@result) %>
+      <h2>Result: <%= @result %></h2>
+    <% end %>
+  </body>
+</html>
